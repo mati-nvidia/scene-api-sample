@@ -1,0 +1,31 @@
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "1.0.0"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "Scene API Sample"
+description="A sample of how to mark an selected object using the omni.ui.scene API."
+authors=["Matias Codesal <mcodesal@nvidia.com>"]
+preview_image = "data/preview.png"
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = "https://github.com/mati-nvidia/scene-api-sample"
+
+# One of categories for UI.
+category = "Example"
+
+# Keywords for the extension
+keywords = ["kit", "example"]
+
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.ui.scene" = {}
+"omni.usd" = {}
+
+# Main python module this extension provides, it will be publicly available as "import omni.hello.world".
+[[python.module]]
+name = "maticodes.scene.sample"
