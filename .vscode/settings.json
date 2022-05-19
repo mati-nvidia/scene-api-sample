@@ -6,7 +6,7 @@
 
     // Python modules search paths:
     "python.analysis.extraPaths": [
-        "${workspaceFolder}/exts/maticodes.scene.ui.example",
+        "${workspaceFolder}/exts/maticodes.scene.sample",
         "${workspaceFolder}/app/kit/extscore/omni.kit.pip_archive/pip_prebundle",
         "${workspaceFolder}/app/kit/plugins/bindings-python",
         "${workspaceFolder}/app/extscache/omni.anim.curve-103.7.10+103.1.wx64.r.cp37",
@@ -405,6 +405,7 @@
     // Python & Pylance Setup
     "python.languageServer": "Pylance",
     "python.pythonPath": "${workspaceFolder}/app/kit/python/python.exe",
+    "python.defaultInterpreterPath": "${workspaceFolder}/app/kit/python/python.exe",
 
     // We use "black" as a formatter:
     "python.formatting.provider": "black",
